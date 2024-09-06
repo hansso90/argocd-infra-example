@@ -1,2 +1,2 @@
-namespace: x
-image: x
+namespace: default
+image: dpage/pgadmin4
