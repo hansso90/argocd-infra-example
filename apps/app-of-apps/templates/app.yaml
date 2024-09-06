@@ -8,9 +8,9 @@ metadata:
   finalizers:
     - resources-finalizer.argocd.argoproj.io
   labels:
-    app: "test-app"
+    app: "test-infra"
 spec:
-  project: test-infra
+  project: app-of-apps
   destination:
     namespace: {{ $app.namespace }}
     server: 'https://kubernetes.default.svc'
