@@ -1,0 +1,6 @@
+apps:
+  - name: pgadmin-dev
+    path: pgadmin
+    values: values-dev.yaml
+    targetRevision: develop
+    namespace: default

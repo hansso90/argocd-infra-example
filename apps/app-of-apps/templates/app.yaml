@@ -1,0 +1,29 @@
+{{- $root := . -}}
+  {{- range $app := .Values.apps }}
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: "{{ $app.name }}"
+  namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+  labels:
+    app: "test-app"
+spec:
+  project: test-infra
+  destination:
+    namespace: {{ $app.namespace }}
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: {{ $app.path }}
+    repoURL: 'git@github.com:hansso90/argocd-infra-example.git'
+    targetRevision: {{ $app.targetRevision }}
+    helm:
+      valueFiles:
+        - values.yaml
+        - {{ $app.values }}
+      parameters:
+        - name: argoApp
+          value: $ARGOCD_APP_NAME
+---
+{{ end }}
