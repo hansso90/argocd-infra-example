@@ -9,7 +9,7 @@ spec:
     server: 'https://kubernetes.docker.internal:6443'
   source:
     path: apps/app-of-apps
-    repoURL: 'git@github.com:hansso90/argocd-infra-example.git'
+    repoURL: 'https://github.com/hansso90/argocd-infra-example.git'
     helm:
       valueFiles:
         - values.yaml

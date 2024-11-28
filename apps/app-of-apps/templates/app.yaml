@@ -4,7 +4,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: "{{ $app.name }}"
-  namespace: argocd
+  namespace: qi-acc
   finalizers:
     - resources-finalizer.argocd.argoproj.io
   labels:
@@ -16,7 +16,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   source:
     path: {{ $app.path }}
-    repoURL: 'git@github.com:hansso90/argocd-infra-example.git'
+    repoURL: {{ $app.repoURL }}}
     targetRevision: {{ $app.targetRevision }}
     helm:
       valueFiles:
