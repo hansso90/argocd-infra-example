@@ -20,6 +20,11 @@ spec:
         - name: {{ .Chart.Name }}
           image: {{ .Values.image }}
           imagePullPolicy: Always
+          env:
+            - name: PGADMIN_DEFAULT_EMAIL
+              value: {{ .Values.pgadmin.email }}
+            - name: PGADMIN_DEFAULT_PASSWORD
+              value: {{ .Values.pgadmin.password }}
           ports:
             - name: http
               containerPort: 8080
