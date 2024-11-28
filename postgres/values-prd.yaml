@@ -1,0 +1,4 @@
+namespace: test-prd
+image: postgres
+postgres:
+  password: "prd"
