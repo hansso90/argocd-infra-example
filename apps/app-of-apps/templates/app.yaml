@@ -8,7 +8,7 @@ metadata:
   finalizers:
     - resources-finalizer.argocd.argoproj.io
   labels:
-    app: "team-test"
+    app: "team-foo"
 spec:
   project: default
   destination:
