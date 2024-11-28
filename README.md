@@ -16,10 +16,18 @@ Running argo on docker-desktop cluster
 ./connect.sh # connect to argo change password and connect test-repo
 ```
 
-Stuck interface on argo
+## debugging
+
+Stuck interface on deleting resource in argo:
 
 ```bash
 kubectl patch Application/{resource} \
 >     --type json \
 >     --patch='[ { "op": "remove", "path": "/metadata/finalizers" } ]'
+```
+
+sync application
+
+```bash
+argocd app sync argocd/test-infra-app-of-apps
 ```
