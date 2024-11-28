@@ -13,7 +13,5 @@ Running argo on docker-desktop cluster
 
 ./port.sh # setup ports to connect to argo
 
-./connect.sh
-
-
+./connect.sh # connect to argo change password and connect test-repo
 ```
