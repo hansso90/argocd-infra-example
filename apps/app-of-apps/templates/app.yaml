@@ -8,7 +8,7 @@ metadata:
   finalizers:
     - resources-finalizer.argocd.argoproj.io
   labels:
-    app: "test-infra"
+    app: "team-test"
 spec:
   project: default
   destination:
@@ -22,8 +22,5 @@ spec:
       valueFiles:
         - values.yaml
         - {{ $app.values }}
-      parameters:
-        - name: argoApp
-          value: $ARGOCD_APP_NAME
 ---
 {{ end }}
