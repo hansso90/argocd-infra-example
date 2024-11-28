@@ -1,4 +1,4 @@
-namespace: test-acc
+namespace: foo-acc
 image: postgres
 postgres:
   password: "acc"

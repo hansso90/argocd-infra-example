@@ -1,4 +1,4 @@
-namespace: test-tst
+namespace: foo-tst
 image: postgres
 postgres:
   password: "tst"
