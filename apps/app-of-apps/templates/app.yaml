@@ -13,17 +13,14 @@ spec:
   project: default
   destination:
     namespace: {{ $app.namespace }}
-    server: 'https://kubernetes.default.svc'
+    server: "https://kubernetes.default.svc"
   source:
     path: {{ $app.path }}
-    repoURL: {{ $app.repoURL }}}
+    repoURL: "https://github.com/hansso90/argocd-infra-example.git"
     targetRevision: {{ $app.targetRevision }}
     helm:
       valueFiles:
         - values.yaml
         - {{ $app.values }}
-      parameters:
-        - name: argoApp
-          value: $ARGOCD_APP_NAME
 ---
 {{ end }}

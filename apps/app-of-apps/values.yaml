@@ -3,4 +3,4 @@ apps:
     path: pgadmin
     values: values-tst.yaml
     targetRevision: main
-    namespace: default
+    namespace: qi-acc
