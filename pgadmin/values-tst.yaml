@@ -1,2 +1,5 @@
-namespace: default
+namespace: test-tst
 image: dpage/pgadmin4
+pgadmin:
+  email: "test@test.nl"
+  password: "tst"

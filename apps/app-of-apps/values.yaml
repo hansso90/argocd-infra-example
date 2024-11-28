@@ -3,4 +3,4 @@ apps:
     path: pgadmin
     values: values-acc.yaml
     targetRevision: main
-    namespace: qi-acc
+    namespace: test-acc
