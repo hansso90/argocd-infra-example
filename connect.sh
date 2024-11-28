@@ -15,6 +15,6 @@ argocd account update-password
 echo "give full privilleges to docker-desktop cluster"
 argocd cluster add docker-desktop
 
-echo "add repo to argoCd with follow command"
+echo "add repo to argoCd with with the follow command, please enter github PAT key:" read PATKEY
 # --username "" --password "{token}" for GITHUB PAT
-argocd repo add https://github.com/hansso90/argocd-infra-example --username "" --password ""
+argocd repo add https://github.com/hansso90/argocd-infra-example --username "" --password "$PATKEY"
