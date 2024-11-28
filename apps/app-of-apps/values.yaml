@@ -1,6 +1,6 @@
 apps:
-  - name: pgadmin-dev
+  - name: pgadmin-acc
     path: pgadmin
-    values: values-tst.yaml
+    values: values-acc.yaml
     targetRevision: main
     namespace: qi-acc
