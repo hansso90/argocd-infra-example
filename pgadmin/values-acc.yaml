@@ -1,2 +1,2 @@
-namespace: default
+namespace: qi-acc
 image: dpage/pgadmin4
