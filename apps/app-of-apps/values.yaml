@@ -4,3 +4,8 @@ apps:
     values: values-acc.yaml
     targetRevision: main
     namespace: test-acc
+  - name: pgadmin-tst
+    path: pgadmin
+    values: values-tst.yaml
+    targetRevision: main
+    namespace: test-tst
