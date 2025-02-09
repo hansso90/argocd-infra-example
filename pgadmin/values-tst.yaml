@@ -1,4 +1,4 @@
-namespace: test-tst
+namespace: foo-tst
 image: dpage/pgadmin4
 pgadmin:
   email: "test@test.nl"

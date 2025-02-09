@@ -1,4 +1,4 @@
-namespace: test-prd
+namespace: foo-prd
 image: dpage/pgadmin4
 pgadmin:
   email: "test@test.nl"

@@ -11,6 +11,7 @@ Running argo on docker-desktop cluster
 ```bash
 ./install.sh # setup argo on your kubernetes cluster
 
+#wait till agro is running correctly
 ./port.sh # setup ports to connect to argo
 
 ./connect.sh # connect to argo change password and connect test-repo
