@@ -1,3 +1,7 @@
+# Testing ArgoCd with app-of-apps pattern
+
+![argocd solution with github-actions](./docs/images/overview.drawio.png)
+
 # Setup up argo locally
 
 Installng the argocd cli
