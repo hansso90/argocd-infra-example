@@ -1,5 +1,5 @@
 namespace: foo-acc
-image: dpage/pgadmin4
+image: dpage/pgadmin4:2025-02-06-1
 pgadmin:
   email: "test@test.nl"
   password: "acc"
