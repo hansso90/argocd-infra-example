@@ -1,16 +1,16 @@
 apps:
-#  - name: pgadmin-acc
-#    path: pgadmin
-#    values: values-acc.yaml
-#    targetRevision: main
-#    namespace: foo-acc
+  - name: pgadmin-acc
+    path: pgadmin
+    values: values-acc.yaml
+    targetRevision: main
+    namespace: foo-acc
   - name: pgadmin-tst
     path: pgadmin
     values: values-tst.yaml
     targetRevision: main
     namespace: foo-tst
-#  - name: postgres-tst
-#    path: postgres
-#    values: values-tst.yaml
-#    targetRevision: main
-#    namespace: foo-tst
+  - name: postgres-tst
+    path: postgres
+    values: values-tst.yaml
+    targetRevision: main
+    namespace: foo-tst
