@@ -21,6 +21,15 @@ Running argo on docker-desktop cluster
 ./connect.sh # connect to argo change password and connect test-repo
 ```
 
+## patterns/architectures
+
+- app-of-apps (this
+  demo): https://www.cncf.io/blog/2025/10/07/managing-kubernetes-workloads-using-the-app-of-apps-pattern-in-argocd-2/?utm_source=copilot.com
+-  argocd agent: https://github.com/argoproj-labs/argocd-agent
+
+More information about different architectures: 
+- https://akuity.io/blog/argo-cd-architectures-explained
+
 ## debugging
 
 Stuck interface on deleting resource in argo:
