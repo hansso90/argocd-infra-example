@@ -7,6 +7,11 @@ spec:
     name: ''
     namespace: default
     server: 'https://kubernetes.docker.internal:6443'
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+      enabled: true
   source:
     path: apps/app-of-apps
     repoURL: 'https://github.com/hansso90/argocd-infra-example.git'
