@@ -25,9 +25,10 @@ Running argo on docker-desktop cluster
 
 - app-of-apps (this
   demo): https://www.cncf.io/blog/2025/10/07/managing-kubernetes-workloads-using-the-app-of-apps-pattern-in-argocd-2/?utm_source=copilot.com
--  argocd agent: https://github.com/argoproj-labs/argocd-agent
+- argocd agent: https://github.com/argoproj-labs/argocd-agent
 
-More information about different architectures: 
+More information about different architectures:
+
 - https://akuity.io/blog/argo-cd-architectures-explained
 
 ## debugging

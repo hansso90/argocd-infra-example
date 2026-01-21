@@ -1,4 +1,9 @@
 apps:
+  - name: pgadmin-prd
+    path: pgadmin
+    values: values-prd.yaml
+    targetRevision: main
+    namespace: foo-prd
   - name: pgadmin-acc
     path: pgadmin
     values: values-acc.yaml
@@ -9,6 +14,9 @@ apps:
     values: values-tst.yaml
     targetRevision: main
     namespace: foo-tst
+
+
+
   - name: postgres-tst
     path: postgres
     values: values-tst.yaml
@@ -19,3 +27,8 @@ apps:
     values: values-acc.yaml
     targetRevision: main
     namespace: foo-acc
+  - name: postgres-prd
+    path: postgres
+    values: values-prd.yaml
+    targetRevision: main
+    namespace: foo-prd
