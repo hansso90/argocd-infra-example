@@ -4,11 +4,11 @@ apps:
     values: values-prd.yaml
     targetRevision: main
     namespace: foo-prd
-#  - name: pgadmin-acc
-#    path: pgadmin
-#    values: values-acc.yaml
-#    targetRevision: main
-#    namespace: foo-acc
+  - name: pgadmin-acc
+    path: pgadmin
+    values: values-acc.yaml
+    targetRevision: main
+    namespace: foo-acc
   - name: pgadmin-tst
     path: pgadmin
     values: values-tst.yaml
@@ -22,11 +22,11 @@ apps:
     values: values-tst.yaml
     targetRevision: main
     namespace: foo-tst
-#  - name: postgres-acc
-#    path: postgres
-#    values: values-acc.yaml
-#    targetRevision: main
-#    namespace: foo-acc
+  - name: postgres-acc
+    path: postgres
+    values: values-acc.yaml
+    targetRevision: main
+    namespace: foo-acc
   - name: postgres-prd
     path: postgres
     values: values-prd.yaml
