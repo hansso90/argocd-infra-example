@@ -1,5 +1,7 @@
 # Testing ArgoCd with app-of-apps pattern
 
+This solution is a setup where you seperated the application code and the gitops code.
+
 ![argocd solution with github-actions](./docs/images/overview.drawio.png)
 
 # Setup up argo locally
