@@ -9,19 +9,19 @@ apps:
     values: values-acc.yaml
     targetRevision: main
     namespace: foo-acc
-  - name: pgadmin-tst
-    path: pgadmin
-    values: values-tst.yaml
-    targetRevision: main
-    namespace: foo-tst
+#  - name: pgadmin-tst
+#    path: pgadmin
+#    values: values-tst.yaml
+#    targetRevision: main
+#    namespace: foo-tst
 
 
 
-  - name: postgres-tst
-    path: postgres
-    values: values-tst.yaml
-    targetRevision: main
-    namespace: foo-tst
+#  - name: postgres-tst
+#    path: postgres
+#    values: values-tst.yaml
+#    targetRevision: main
+#    namespace: foo-tst
   - name: postgres-acc
     path: postgres
     values: values-acc.yaml
